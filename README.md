@@ -1,3 +1,3 @@
-# netfy-softres
+# netfy-softrest
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/11ty-xdtwj8)
+More info [https://www.fiverr.com/creativitas/design-your-modern-website-using-jekyll](https://www.fiverr.com/creativitas/design-your-modern-website-using-jekyll)
