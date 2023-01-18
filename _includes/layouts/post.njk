@@ -1,0 +1,9 @@
+---
+layout: layouts/base.njk
+---
+
+{% include "widget/content.njk" %}
+{{ content | safe }}
+{% if link %}<a href="{{link}}" class="btn btn-dark grape text-white">Order {{title}}</a>{% endif %}
+{% include "widget/next.njk" %}
+{% include "widget/update.njk" %}

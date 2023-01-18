@@ -1,0 +1,5 @@
+<div class="row">
+{% for post in postslist | reverse %}
+    <a href="{{ post.url | url }}" class="col-md-4 col-6">{{ post.data.title }}</a>
+{% endfor %}
+</div>

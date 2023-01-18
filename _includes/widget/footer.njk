@@ -1,0 +1,32 @@
+    <footer>
+    
+{% include "widget/order.njk" %}
+
+    <div class="col-md-12 p-3 p-md-5">
+    <div class="row">
+  <div class="col-md-2 p-3 p-md-5">
+<h3>Menu</h3>
+   {%- for entry in collections.all | eleventyNavigation %}
+       <a href="{{ entry.url | url }}">{{ entry.title }}</a><br/>
+      {%- endfor %}
+      <a href="/order/#!/Resto-Cafe/c/55139027">Order</a>
+    </div>
+
+<div class="col-md-8 p-3 p-md-5">
+<h3>Software App</h3>
+{% set postslist = collections.posts %}
+{% set postslistCounter = collections.posts | length %}
+{% include "linklist.njk" %}
+</div>
+
+  <div class="col-md-2 p-3 p-md-5">
+  <h3>Contact</h3>
+    <p><a href="https://wa.me/{{metadata.wa}}">Whatsapp</a><br/><a href="tel:+{{metadata.tel}}">Call Us</a><br/><a href="mailto:{{metadata.mail}}">Email</a><br/><a href="{{metadata.map}}">Maps</a></p>
+    </div>
+    </div>
+    </div>
+<p class="text-center p-1"><small><a href="/">{{metadata.title}}</a> develope by <a href="https://www.fiverr.com/creativitas/design-your-modern-website-using-jekyll">creativitas</a></small></p>
+    </footer>
+    </div>
+  </body>
+</html>

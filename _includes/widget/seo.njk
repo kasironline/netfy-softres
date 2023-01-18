@@ -1,0 +1,27 @@
+<meta name="google-site-verification" content="Xi3WpckDbMBvm1pdlc5XukNoA9uWDmnExIiOeaTOxq0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title or metadata.title }}</title>
+<meta name="description" content="{{ description or metadata.description }}">    
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ metadata.url | url }}">
+<meta property="og:site_name" content="{{ title or metadata.title }}">
+<meta property="og:locale" content="{{metadata.locale}}">
+<meta property="og:title" content="{{ title or metadata.title }}">
+<meta property="og:description" content="{{ description or metadata.description }}">
+<meta property="og:image" content="{{ cover or metadata.cover }}">
+<meta property="og:image:alt" content="{{ description or metadata.description }}">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">    
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="{{metadata.url}}">
+<meta property="twitter:creator" content="{{metadata.url}}">
+<meta property="twitter:url" content="{{metadata.url}}">
+<meta property="twitter:title" content="{{ title or metadata.title }}">
+<meta property="twitter:description" content="{{ description or metadata.description }}">
+<meta property="twitter:image" content="{{ cover or metadata.cover }}">
+<meta property="twitter:image:alt" content="{{ description or metadata.description }}">
+<link rel="icon" type="image/png" sizes="96x96" href='{{ metadata.cover }}'/>
+<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+<link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+<meta name="generator" content="{{ eleventy.generator }}">
+<meta name="robots" content="index,follow">

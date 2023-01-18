@@ -1,0 +1,8 @@
+<div class="row p-3 text-center justify-content-center">
+{% set maxPosts = collections.posts.length | min(6) %}
+<h3>Update Software Resto Post</h3>
+{% set postslist = collections.posts | head(-6) %}
+{% set postslistCounter = collections.posts | length %}
+{% include "postslist.njk" %}
+<p><a class="btn btn-dark grape" href="{{ '/posts/' | url }}">Explore all software app</a></p>
+</div>

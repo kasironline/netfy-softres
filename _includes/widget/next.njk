@@ -1,0 +1,10 @@
+{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{%- if nextPost or previousPost %}
+<hr>
+<div class="row bg-light rounded p-3">
+  {%- if nextPost %}<div class="col-md-6 p-1 text-start"><a class="btn btn-dark grape text-white" href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></div>{% endif %}
+  {%- if previousPost %}<div class="col-md-6 p-1 text-end"><a class="btn btn-dark grape text-white" href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></div>{% endif %}
+</div>
+{%- endif %}
+<hr>

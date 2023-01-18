@@ -1,0 +1,19 @@
+---
+layout: layouts/product.njk
+title: Software Resto Program App
+description: List daftar software dan program restoran , aplikasi restoran.
+permalink: /posts/
+tags:
+  - software restoran
+  - program restoran
+  - software cafe
+  - program cafe
+  - restoran
+  - cafe
+  - rumah makan
+eleventyNavigation:
+  key: Produk
+  order: 2
+---
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}
